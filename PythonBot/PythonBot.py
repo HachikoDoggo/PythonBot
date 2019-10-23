@@ -1,15 +1,7 @@
 import discord
-import time
 import asyncio
-import sys
 import os
 import config
-import random
-import io
-import traceback
-import warnings
-import concurrent.futures
-import threading
 import logging
 from discord.ext import commands, tasks
 from itertools import cycle
