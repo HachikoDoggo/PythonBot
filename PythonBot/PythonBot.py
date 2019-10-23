@@ -3,8 +3,9 @@ import asyncio
 import os
 import config
 import logging
-from discord.ext import commands, tasks
+import os
 from itertools import cycle
+from discord.ext import commands, tasks
 
 token = open("token.txt","r").read()
 
