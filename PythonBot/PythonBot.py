@@ -24,9 +24,7 @@ logger.addHandler(handler)
 
 status = cycle(['Serving 1 Server', 'And thats my testing server', 'LOL', 'Contact My creator on xbox!', 'XBOX=Hachi Is My Dog', 'Remember im still in development!', 'FUCK LIFE'])
 
-
 client = commands.Bot(command_prefix = '.')
-
 
 @client.event
 async def on_ready():
@@ -51,7 +49,7 @@ async def load(ctx, extension):
 async def unload(ctx, extension):
 		client.unload_extension(f'cogs.{extension}')
 
-for filename in os.listdir(r"C:\Users\missw\Desktop\PythonBot\Cogs"):
+for filename in os.listdir("./cogs"):
 	if filename.endswith('.py'):
 		client.load_extension(f'cogs.{filename[:-3]}')
 
